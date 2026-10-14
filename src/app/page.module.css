@@ -1,0 +1,731 @@
+.pageWrapper {
+  max-width: 500px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: #ffffff;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+/* Header (Fanpage.it style with MCR NEWS branding) */
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #000000;
+  border-bottom: 3.5px solid #ff5500;
+  height: 58px;
+  width: 100%;
+}
+
+.headerInner {
+  height: 100%;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.menuBtn {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 0;
+}
+
+.menuBar {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background-color: #ffffff;
+  border-radius: 1px;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logoImg {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.abbonatiBtn {
+  background-color: #ff5500;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.abbonatiBtn:hover {
+  background-color: #e04b00;
+}
+
+.bellBtn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #ff5500;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  position: relative;
+}
+
+.bellBadge {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 11px;
+  font-weight: 800;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #ff5500;
+}
+
+/* Article Content */
+.mainContainer {
+  padding: 0 0 40px 0;
+}
+
+.articleTitle {
+  font-size: 27px;
+  font-weight: 800;
+  line-height: 1.25;
+  color: #111111;
+  letter-spacing: -0.4px;
+  padding: 18px 16px 12px 16px;
+}
+
+.dateRow {
+  font-size: 13.5px;
+  color: #666666;
+  padding: 0 16px 16px 16px;
+  font-weight: 500;
+}
+
+.authorRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px 18px 16px;
+}
+
+.authorInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.authorAvatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.authorText {
+  font-size: 14.5px;
+  color: #333333;
+}
+
+.authorName {
+  font-weight: 700;
+  color: #000000;
+}
+
+.shareActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.actionBtn {
+  width: 38px;
+  height: 38px;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.actionBtn:hover {
+  background-color: #f7f7f7;
+  border-color: #b0b0b0;
+}
+
+/* Featured Media */
+.featuredMedia {
+  width: 100%;
+}
+
+.featuredImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.leadParagraph {
+  padding: 18px 16px 14px 16px;
+  font-size: 18px;
+  line-height: 1.55;
+  font-style: italic;
+  color: #222222;
+  font-weight: 400;
+}
+
+/* Video Consigliato Box */
+.videoSection {
+  margin: 16px;
+  background-color: #f9f9fb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.videoHeader {
+  padding: 10px 14px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  color: #111111;
+  text-transform: uppercase;
+  text-align: center;
+  border-bottom: 1px solid #f0f0f2;
+}
+
+.videoWrap {
+  position: relative;
+  width: 100%;
+  background-color: #000000;
+}
+
+.videoImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.videoMuteBtn {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #ff5500;
+  color: #ffffff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.videoWatermark {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 13px;
+  font-weight: 700;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Body Text Paragraphs */
+.bodyParagraph {
+  padding: 10px 16px;
+  font-size: 16.5px;
+  line-height: 1.65;
+  color: #2c2c2c;
+}
+
+.highlightBox {
+  margin: 16px;
+  padding: 14px 16px;
+  background-color: #fff8f5;
+  border-left: 4px solid #ff5500;
+  border-radius: 0 6px 6px 0;
+  font-size: 15px;
+  line-height: 1.55;
+  color: #333333;
+}
+
+.highlightTitle {
+  font-weight: 700;
+  color: #ff5500;
+  margin-bottom: 4px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Footer */
+/* Italian Fanpage Mobile Dark Footer */
+.footer {
+  background-color: #000000;
+  color: #888888;
+  padding: 38px 16px 30px 16px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.6;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footerInner {
+  max-width: 440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 1. Social Circle Buttons Row */
+.socialRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.socialBtn {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: #262626;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.15s ease;
+}
+
+.socialBtn:hover {
+  background-color: #383838;
+}
+
+/* 2. Logo */
+.footerLogo {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 22px;
+  display: block;
+}
+
+/* 3. Contact / Segnalazioni Card */
+.contactCard {
+  width: 100%;
+  background-color: #1c1c1e;
+  border-radius: 12px;
+  padding: 22px 16px;
+  margin-bottom: 24px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.contactTitle {
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1.45;
+  margin-bottom: 16px;
+}
+
+.contactBtnRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.contactBtn {
+  flex: 1;
+  max-width: 155px;
+  background-color: #383838;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.contactBtn:hover {
+  background-color: #4a4a4a;
+}
+
+/* 4. Legal / Editorial Texts */
+.legalText {
+  color: #888888;
+  font-size: 12px;
+  line-height: 1.55;
+  margin-bottom: 8px;
+}
+
+.issnText {
+  color: #888888;
+  font-size: 12px;
+  margin-bottom: 14px;
+}
+
+.issnLink {
+  color: #3b82f6;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.photoRightsText {
+  color: #888888;
+  font-size: 12px;
+  line-height: 1.55;
+  margin-bottom: 24px;
+}
+
+/* 5. App Store & Google Play Badges */
+.appBadgeRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.appStoreBtn {
+  flex: 1;
+  height: 48px;
+  background-color: #383838;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.appStoreBtn:hover {
+  background-color: #4a4a4a;
+}
+
+/* 6. Divider */
+.footerDivider {
+  width: 100%;
+  height: 1px;
+  background-color: #242424;
+  margin: 0 0 24px 0;
+}
+
+/* 7. Publisher Brand */
+.networkBrand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-size: 21px;
+  font-weight: 800;
+  color: #ff5500;
+  letter-spacing: -0.5px;
+}
+
+.subheading {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.35;
+  color: #111111;
+  padding: 22px 16px 8px 16px;
+  letter-spacing: -0.3px;
+}
+
+.quoteBox {
+  margin: 16px;
+  padding: 14px 16px;
+  background-color: #f8f9fa;
+  border-left: 3.5px solid #ff5500;
+  border-radius: 0 6px 6px 0;
+  font-style: italic;
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: #2c2c2c;
+}
+
+.questionsBlock {
+  padding: 10px 16px;
+}
+
+.questionsTitle {
+  font-weight: 700;
+  font-size: 16.5px;
+  color: #111111;
+  margin-bottom: 8px;
+}
+
+.questionsList {
+  list-style: none;
+  padding-left: 0;
+}
+
+.questionItem {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 1.55;
+  color: #2c2c2c;
+}
+
+.questionItem::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #ff5500;
+  font-size: 20px;
+  line-height: 1;
+}
+
+/* Unread News Section (NOTIZIE CHE NON HAI ANCORA LETTO) */
+.unreadSection {
+  margin: 32px 16px 20px 16px;
+  padding-top: 24px;
+  border-top: 1px solid #eaeaea;
+}
+
+.unreadHeading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #111111;
+  letter-spacing: -0.2px;
+  margin-bottom: 22px;
+  text-transform: uppercase;
+}
+
+.unreadBadge {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5px;
+  width: 22px;
+  flex-shrink: 0;
+}
+
+.unreadBadgeTop {
+  height: 4.5px;
+  background-color: #111111;
+  border-radius: 2px;
+  width: 100%;
+}
+
+.unreadBadgeBottom {
+  height: 4.5px;
+  background-color: #e51937;
+  border-radius: 2px;
+  width: 100%;
+}
+
+.unreadList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.unreadCard {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.unreadThumbWrap {
+  width: 124px;
+  height: 82px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+.unreadThumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.unreadTitle {
+  font-size: 15.5px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #111111;
+  text-decoration: none !important;
+}
+
+.unreadTitleRed {
+  color: #d0021b !important;
+}
+
+/* Pill Button: altre notizie sulle criptovalute */
+.cryptoBtnWrap {
+  margin-top: 26px;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+.cryptoBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  height: 56px;
+  background-color: #051441;
+  color: #ffffff;
+  border-radius: 9999px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  text-decoration: none !important;
+  box-shadow: 0 4px 14px rgba(5, 20, 65, 0.25);
+  transition: all 0.2s ease;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  font-family: inherit;
+}
+
+.cryptoBtn:disabled {
+  opacity: 0.85;
+  cursor: not-allowed;
+}
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 2.5px solid rgba(255, 255, 255, 0.35);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+/* Full Screen Loading Overlay */
+.loadingOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.loadingBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  color: #ffffff;
+  padding: 24px;
+}
+
+.globalSpinner {
+  width: 46px;
+  height: 46px;
+  border: 4px solid rgba(255, 255, 255, 0.25);
+  border-top-color: #ff5500;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+.loadingText {
+  font-size: 15.5px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.cryptoBtn:hover {
+  background-color: #092163;
+  box-shadow: 0 6px 18px rgba(5, 20, 65, 0.35);
+  transform: translateY(-1px);
+}
+
+.cryptoBtn:active {
+  background-color: #030d2b;
+  transform: translateY(0);
+}

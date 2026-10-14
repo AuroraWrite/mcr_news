@@ -1,0 +1,33 @@
+:root {
+  --primary-orange: #ff5500;
+  --primary-orange-hover: #e04b00;
+  --text-dark: #121212;
+  --text-muted: #666666;
+  --text-light: #888888;
+  --border-light: #e6e6e6;
+  --bg-page: #f2f3f5;
+  --bg-card: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: clip;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--bg-page);
+  color: var(--text-dark);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
